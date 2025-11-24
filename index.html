@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Word Impact Nation</title>
+  </head>
+  <body class="font-[inter]">
+    <!-- NAVIGATION -->
+    <nav
+      class="bg-blue-50 shadow-sm flex justify-between items-center px-4 md:px-6 lg:10 xl:15 py-2 z-1000 fixed w-full top-0"
+    >
+      <div class="flex items-center">
+        <img
+          src="./images/church-svgrepo-com.svg"
+          alt=""
+          class="w-15 max-md:w-10"
+        />
+        <p class="font-semibold md:text-2xl">WIN CHURCH</p>
+      </div>
+      <ul class="flex space-x-5 max-md:hidden">
+        <li class="hover:text-gray-500 transition duration-300">
+          <a href="#">Home</a>
+        </li>
+        <li class="hover:text-gray-500 transition duration-300">
+          <a href="#about-section">About</a>
+        </li>
+        <li class="hover:text-gray-500 transition duration-300">
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li class="hover:text-gray-500 transition duration-300">
+          <a href="#">Ministries</a>
+        </li>
+        <li class="hover:text-gray-500 transition duration-300">
+          <a href="#">Services</a>
+        </li>
+        <li class="hover:text-gray-500 transition duration-300">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <button
+        class="bg-purple-600 rounded-md py-2 px-2 text-white cursor-pointer hover:bg-purple-500 transition duration-300 max-md:hidden"
+      >
+        Join Us
+      </button>
+      <!-- ham-btn -->
+      <div class="md:hidden p-2 hover:bg-gray-200 rounded-md" id="ham-btn">
+        <i class="fa-solid fa-bars text-xl cursor-pointer"></i>
+      </div>
+    </nav>
+
+    <!-- MOBILE NAVIGATION -->
+    <div
+      class="bg-blue-100 inset-0 fixed top-0 py-10 -translate-x-full tranform transition-all duration-400 z-1000"
+      id="menu"
+    >
+      <!-- close-btn -->
+      <div
+        class="absolute top-5 right-5 p-2 hover:bg-gray-200 rounded-md"
+        id="close-btn"
+      >
+        <i class="fa-solid fa-xmark text-xl cursor-pointer"></i>
+      </div>
+      <!-- Logo -->
+      <img src="/images/church-svgrepo-com.svg" alt="" class="w-15 mx-auto" />
+      <ul class="flex flex-col space-y-8 text-center mt-20">
+        <li class="hover:text-gray-500 transition duration-300">
+          <a href="#">Home</a>
+        </li>
+        <li class="hover:text-gray-500 transition duration-300">
+          <a href="#">About</a>
+        </li>
+        <li class="hover:text-gray-500 transition duration-300">
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li class="hover:text-gray-500 transition duration-300">
+          <a href="#">Ministries</a>
+        </li>
+        <li class="hover:text-gray-500 transition duration-300">
+          <a href="#">Services</a>
+        </li>
+        <li class="hover:text-gray-500 transition duration-300">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- MAIN CONTENT -->
+    <main class="mt-10 py-5">
+      <!-- HERO SECTION -->
+      <section
+        class="bg-[url('images/IMG_20251003_071652_193.jpg')] h-screen bg-cover bg-center relative py-10 relative"
+      >
+        <!-- overlay -->
+        <div
+          class="bg-gradient-to-r from-[rgba(128,0,128,0.6)] to-[rgba(0,0,255,0.5)] inset-0 absolute backdrop-blur-xs"
+        ></div>
+
+        <!-- text on image -->
+        <div
+          class="text-center py-4 bg-white/20 backdrop-blur-xs rounded-full shadow-xl w-80 mx-auto max-md:w-full"
+        >
+          <p class="text-white relative">
+            <span class="mr-2"
+              ><i
+                class="fa-solid fa-circle fa-beat text-xs text-red-500"
+              ></i></span
+            >Welcome to Our Church Family
+          </p>
+        </div>
+
+        <div class="relative px-5">
+          <p
+            class="text-white text-center py-5 font-bold text-4xl max-md:text-lg text transform -translate-y-8 opacity-0 duration-900 uppercase"
+          >
+            Word Impact Nation
+          </p>
+          <p
+            class="text-white text-center py-5 text-lg max-md:text-sm text transform -translate-y-8 opacity-0 duration-900"
+          >
+            Experience the transforming power of God's Word. <br />
+            Join a vibrant community where faith comes alive, hearts are
+            renewed, and lives are changed forever.
+          </p>
+          <!-- buttons -->
+          <div class="flex justify-center mt-5 space-x-4">
+            <button
+              class="bg-pink-600 text-white py-3 px-3 rounded-md cursor-pointer max-md:text-xs hover:scale-[1.05] duration-300 transition shadow-lg"
+            >
+              Visit this sunday
+              <span><i class="fa-solid fa-arrow-right-long ml-2"></i></span>
+            </button>
+            <button
+              class="border border-white/50 text-white py-3 px-3 rounded-md cursor-pointer max-md:text-xs hover:border-white transition duration-300"
+            >
+              <span><i class="fa-solid fa-circle-play mr-2"></i></span>Watch
+              Online
+            </button>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div
+          class="card flex justify-center space-x-5 relative top-1/3 max-md:top-0 max-md:flex-col max-md:mx-auto max-md:place-items-center px-5"
+        >
+          <div
+            class="bg-white/20 shadow-md w-80 relative rounded-md mt-5 text-center py-8 px-2 text-white border border-white/10 backdrop-blur-xs max-md:w-[70%] max-md:py-4 hover:scale-[1.08] transition duration-300"
+          >
+            <i
+              class="fa-solid fa-heart fa-beat text-pink-600 text-3xl max-md:text-2xl"
+            ></i>
+            <p class="font-bold py-2 text-xl max-md:text-lg">
+              Faithful Community
+            </p>
+            <p class="max-md:text-sm">United in love and worship</p>
+          </div>
+          <div
+            class="bg-white/20 shadow-md w-80 relative rounded-md mt-5 text-center py-8 px-2 text-white border border-white/10 backdrop-blur-xs max-md:w-[70%] max-md:py-4 hover:scale-[1.08] transition duration-300"
+          >
+            <i
+              class="fa-solid fa-user-group fa-beat-fade text-3xl max-md:text-2xl text-gray-900"
+            ></i>
+            <p class="font-bold py-2 text-xl max-md:text-lg">
+              Growing Together
+            </p>
+            <p class="max-md:text-sm">Building lasting relationships</p>
+          </div>
+          <div
+            class="bg-white/20 shadow-md w-80 relative rounded-md mt-5 text-center px-2 py-8 text-white border border-white/10 backdrop-blur-xs max-md:w-[70%] max-md:py-4 hover:scale-[1.08] transition duration-300"
+          >
+            <i
+              class="fa-solid fa-book-bible fa-fade text-3xl max-md:text-2xl text-yellow-300"
+            ></i>
+            <p class="font-bold py-2 text-xl max-md:text-lg">Word Centered</p>
+            <p class="max-md:text-sm">Rooted in Scripture</p>
+          </div>
+        </div>
+        <!-- End of cars -->
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section
+        class="px-5 py-10 grid sm:grid-cols-1 md:grid-cols-2 place-items-center space-x-4 overflow-hidden image transform opacity-0 duration-900"
+        id="about-section"
+      >
+        <div class="">
+          <img
+            src="./images/PBA.jpg"
+            alt=""
+            class="sm:w-100 md:w-120 lg:w-140 rounded-lg max-md:mt-4 -translate-x-full image transform opacity-0 transition-all duration-800"
+          />
+          <div class="space-y-2">
+            <p class="text-3xl max-md:text-lg text-center font-semibold">
+              Pastor Benjamin Ansah (PBA)
+            </p>
+            <p class="text-center font-semibold text-gray-500 max-md:text-sm">
+              Founder of Word Impact Nation
+            </p>
+          </div>
+        </div>
+
+        <!-- Text on the right side -->
+        <div
+          class="translate-x-full right transform opacity-0 transition-all duration-1000"
+        >
+          <h1
+            class="text-center text-3xl max-md:text-xl font-semibold max-md:mt-10"
+          >
+            ABOUT US
+          </h1>
+          <hr class="border-2 mt-2 w-15 mx-auto" />
+
+          <p class="text-center mt-5 text-lg max-md:text-sm text-gray-500">
+            Word Impact Nation (WIN) is a Ghanaian youth-focused Christian
+            ministry led by Pastor Benjamin Ansah, its founder and Global Lead
+            Pastor. The ministry is centered on spiritual growth, leadership
+            development, and building a community of passionate young believers.
+            WIN is active digitally through YouTube, podcasts, and Instagram,
+            where they share teachings, events, and outreach activities. Their
+            programs include youth services, encounter nights, and inspirational
+            messages designed to empower young people to grow in faith and
+            purpose.
+          </p>
+        </div>
+      </section>
+
+      <!-- MISSION and VISION -->
+      <section class="px-4 py-15 mt-10">
+        <div
+          class="card flex justify-center place-items-center gap-5 mt-8 max-md:flex-col"
+        >
+          <!-- Mission -->
+          <div
+            class="w-[30rem] max-md:w-[20rem] shadow-md bg-purple-600 rounded-md p-10 hover:shadow-xl hover:scale-[1.05] transition-all duration-700 -translate-y-5 opacity-0 transform mission"
+          >
+            <div class="p-2 bg-white/30 size-10 rounded-md">
+              <i class="fa-regular fa-heart text-xl text-white"></i>
+            </div>
+            <p class="font-bold text-2xl text-white max-md:text-xl">
+              Our Mission
+            </p>
+
+            <p class="text-white max-md:text-sm mt-2">
+              To spread the transforming love of Christ and empower believers to
+              live out their God-given purpose with boldness and grace.
+            </p>
+          </div>
+          <!-- Vision -->
+          <div
+            class="w-[30rem] max-md:w-[20rem] shadow-md bg-pink-600 rounded-md p-10 hover:shadow-xl hover:scale-[1.05] transition-all duration-800 -translate-y-10 opacity-0 transform vision"
+          >
+            <div class="p-2 bg-white/30 w-10 rounded-md">
+              <i class="fa-regular fa-eye text-xl text-white"></i>
+            </div>
+            <p class="font-bold text-2xl text-white max-md:text-xl">
+              Our Vision
+            </p>
+
+            <p class="text-white max-md:text-sm mt-2">
+              To spread the transforming love of Christ and empower believers to
+              live out their God-given purpose with boldness and grace.
+            </p>
+          </div>
+          <!-- Values -->
+          <div
+            class="w-[30rem] max-md:w-[20rem] shadow-md bg-blue-600 rounded-md p-10 hover:shadow-xl hover:scale-[1.05] transition-all duration-1000 -translate-y-15 opacity-0 transform values"
+          >
+            <div class="p-2 bg-white/30 w-10 rounded-md">
+              <i class="fa-solid fa-wand-magic-sparkles text-xl text-white"></i>
+            </div>
+            <p class="font-bold text-2xl text-white max-md:text-xl">
+              Our Values
+            </p>
+
+            <p class="text-white max-md:text-sm mt-2">
+              Love, Excellence, Integrity, Community, and Empowerment guide
+              everything we do and shape how we serve God and others.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY SECTION -->
+      <section class="bg-gray-100 py-5 px-5" id="gallery">
+        <h1
+          class="font-[ubuntu] text-center text-4xl font-semibold max-md:text-2xl "
+        >
+          GALLERY
+        </h1>
+        <hr class="border-2 mt-2 w-10 mx-auto mt-8"  />
+        <!-- Bento Grid of Gallery -->
+        <div
+          class="mt-10 flex justify-center space-x-5 items-center max-md:block max-md:place-items-center max-md:space-y-5"
+        >
+          <!--Wrapper -->
+
+          <!-- first image -->
+          <div
+            class="w-120 max-md:w-80 max-md:mx-auto place-items-center relative group text-white  overflow-hidden transition-all duration-700 -translate-y-5 opacity-0 transform mission"
+          >
+            <img
+              src="./images/IMG_20251121_160346_717.jpg"
+              alt=""
+              class="rounded-xl group-hover:scale-110 group-hover:transition-all duration-300"
+            />
+            <!-- overlay -->
+            <div
+              class="bg-black/30 inset-0 absolute top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl group-hover:scale-110"
+            ></div>
+            <div class="absolute bottom-5 left-1/4 text-xl group">
+              <p
+                class="relative opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold md:text-2xl"
+              >
+                Worship Night
+              </p>
+            </div>
+          </div>
+          <!-- second group of images -->
+          <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- image 1 -->
+            <div class="relative group text-white overflow-hidden transition-all duration-700 -translate-y-5 opacity-0 transform mission">
+              <img
+                src="./images/IMG_20250708_214419_880.jpg"
+                alt=""
+                class="rounded-xl w-100 group-hover:scale-110 group-hover:transition-all duration-300"
+              />
+              <div
+                class="bg-black/30 inset-0 absolute top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"
+              ></div>
+              <div class="absolute bottom-5 left-1/4 text-xl group">
+                <p
+                  class="relative opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold md:text-2xl text-center"
+                >
+                  School Of Destiny 2.0
+                </p>
+              </div>
+            </div>
+
+            <!-- image 2 -->
+            <div class="relative group text-white overflow-hidden transition-all duration-700 -translate-y-5 opacity-0 transform mission">
+              <img
+                src="./images/IMG_20250603_093307_309.jpg"
+                alt=""
+                class="rounded-xl w-100 group-hover:scale-110 group-hover:transition-all duration-300"
+              />
+              <div
+                class="bg-black/30 inset-0 absolute top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"
+              ></div>
+              <div class="absolute bottom-5 left-1/4 text-xl group">
+                <p
+                  class="relative opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold md:text-2xl text-center"
+                >
+                  SOD First Edition
+                </p>
+              </div>
+            </div>
+
+            <!-- image 3 -->
+            <div class="relative group text-white overflow-hidden transition-all duration-700 -translate-y-5 opacity-0 transform mission">
+              <img
+                src="./images/IMG_20251002_064617_724.jpg"
+                alt=""
+                class="rounded-xl w-100 group-hover:scale-110 group-hover:transition-all duration-300"
+              />
+              <div
+                class="bg-black/30 inset-0 absolute top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"
+              ></div>
+              <div class="absolute bottom-5 left-1/4 text-xl group">
+                <p
+                  class="relative opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold md:text-2xl text-center"
+                >
+                  Crazy Praise 5.0
+                </p>
+              </div>
+            </div>
+            <!-- image 3 -->
+            <div class="relative group text-white overflow-hidden transition-all duration-700 -translate-y-5 opacity-0 transform mission">
+              <img
+                src="./images/IMG_4797.jpg"
+                alt=""
+                class="rounded-xl w-100 group-hover:scale-110 group-hover:transition-all duration-300"
+              />
+              <div
+                class="bg-black/30 inset-0 absolute top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"
+              ></div>
+              <div class="absolute bottom-5 left-1/4 text-xl group">
+                <p
+                  class="relative opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold md:text-2xl text-center"
+                >
+                  La Noche Dorada
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Another grid of gallery -->
+        <div
+          class="py-2 px-4 flex justify-center items-center space-x-4 max-md:flex-col max-md:space-y-4 max-md:space-x-0"
+        >
+          <div
+            class="flex justify-center relative group text-white overflow-hidden transition-all duration-700 -translate-y-5 opacity-0 transform mission"
+          >
+            <img
+              src="./images/ato.jpg"
+              alt=""
+              class="w-80 rounded-xl group-hover:scale-110 transition-all duration-300"
+            />
+            <div
+              class="bg-black/30 inset-0 absolute top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"
+            ></div>
+            
+          </div>
+
+          <div class="flex justify-center relative group text-white overflow-hidden transition-all duration-700 -translate-y-5 opacity-0 transform mission">
+            <img src="./images/ia.jpg" alt="" class="w-80 rounded-xl group-hover:scale-110 transition-all duration-300" />
+             <div
+              class="bg-black/30 inset-0 absolute top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"
+            ></div>
+          </div>
+
+          <div class="flex justify-center relative group text-white overflow-hidden transition-all duration-700 -translate-y-5 opacity-0 transform mission">
+            <img src="./images/rr.jpg" alt="" class="w-80 rounded-xl group-hover:scale-110 transition-all duration-300" />
+            <div
+              class="bg-black/30 inset-0 absolute top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"
+            ></div>
+          </div>
+
+          <div class="flex justify-center relative group text-white overflow-hidden transition-all duration-700 -translate-y-5 opacity-0 transform mission">
+            <img src="./images/b.jpg" alt="" class="w-80 rounded-xl  group-hover:scale-110 transition-all duration-300" />
+            <div
+              class="bg-black/30 inset-0 absolute top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
